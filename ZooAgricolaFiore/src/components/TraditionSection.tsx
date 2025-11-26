@@ -71,8 +71,12 @@ const TraditionSection = () => {
                 loop
                 muted
                 playsInline
+                preload="auto"
                 className="w-full h-auto object-cover"
-              />
+                style={{ maxHeight: '500px' }}
+              >
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </div>

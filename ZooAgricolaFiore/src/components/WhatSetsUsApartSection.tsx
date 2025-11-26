@@ -73,31 +73,33 @@ const WhatSetsUsApartSection = () => {
     <section className="bg-background py-20">
       <div className="container mx-auto px-6">
         {/* Header with navigation */}
-        <div className="flex items-center justify-between mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-            Cosa Ci Contraddistingue
-          </h2>
-          
-          {/* Navigation Arrows */}
-          <div className="flex gap-3">
-            <Button
-              variant="hero"
-              size="icon"
-              className="rounded-full w-12 h-12"
-              aria-label="Previous"
-              onClick={() => setCurrentIndex((currentIndex - 1 + features.length) % features.length)}
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </Button>
-            <Button
-              variant="hero"
-              size="icon"
-              className="rounded-full w-12 h-12"
-              aria-label="Next"
-              onClick={() => setCurrentIndex((currentIndex + 1) % features.length)}
-            >
-              <ChevronRight className="w-6 h-6" />
-            </Button>
+        <div className="mb-12">
+          <div className="flex items-center justify-between mb-6 md:mb-0">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+              Cosa Ci Contraddistingue
+            </h2>
+            
+            {/* Navigation Arrows - Desktop only */}
+            <div className="hidden md:flex gap-3">
+              <Button
+                variant="hero"
+                size="icon"
+                className="rounded-full w-12 h-12"
+                aria-label="Previous"
+                onClick={() => setCurrentIndex((currentIndex - 1 + features.length) % features.length)}
+              >
+                <ChevronLeft className="w-6 h-6" />
+              </Button>
+              <Button
+                variant="hero"
+                size="icon"
+                className="rounded-full w-12 h-12"
+                aria-label="Next"
+                onClick={() => setCurrentIndex((currentIndex + 1) % features.length)}
+              >
+                <ChevronRight className="w-6 h-6" />
+              </Button>
+            </div>
           </div>
         </div>
 
@@ -189,6 +191,28 @@ const WhatSetsUsApartSection = () => {
             </Link>
           ))}
           </div>
+        </div>
+
+        {/* Navigation Arrows - Mobile only (below cards) */}
+        <div className="md:hidden flex justify-center gap-3 mt-6">
+          <Button
+            variant="hero"
+            size="icon"
+            className="rounded-full w-12 h-12"
+            aria-label="Previous"
+            onClick={() => setCurrentIndex((currentIndex - 1 + features.length) % features.length)}
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </Button>
+          <Button
+            variant="hero"
+            size="icon"
+            className="rounded-full w-12 h-12"
+            aria-label="Next"
+            onClick={() => setCurrentIndex((currentIndex + 1) % features.length)}
+          >
+            <ChevronRight className="w-6 h-6" />
+          </Button>
         </div>
       </div>
     </section>
