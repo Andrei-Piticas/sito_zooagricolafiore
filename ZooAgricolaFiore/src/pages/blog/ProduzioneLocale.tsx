@@ -87,7 +87,7 @@ const ProduzioneLocale = () => {
               <div className="mb-6">
                 <span className="inline-block bg-golden-yellow/15 text-golden-yellow px-4 py-2 rounded-full text-sm font-medium">16 Giu, 2025</span>
               </div>
-              <h2 className="text-xl md:text-3xl font-bold text-foreground mb-8">Benefici di scegliere una produzione locale come la nostra</h2>
+              <h2 className="text-lg md:text-3xl font-bold text-foreground mb-8">Benefici di scegliere una produzione locale come la nostra</h2>
               <div className="rounded-2xl overflow-hidden mb-8">
                 <img src={heroFarm} alt="Produzione Locale" className="w-full h-[600px] object-cover" />
               </div>
