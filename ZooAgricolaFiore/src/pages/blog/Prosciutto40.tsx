@@ -18,7 +18,7 @@ const Prosciutto40 = () => {
           <img src={blogProsciutto} alt="Prosciutto 4.0" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/40" />
         </div>
-        <div className="container relative z-10 mx-auto px-6">
+        <div className="container relative z-10 mx-auto px-6 pt-20">
           <div className="max-w-4xl">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">
               Prosciutto 4.0: Tradizione E Innovazione Verso Il 2025

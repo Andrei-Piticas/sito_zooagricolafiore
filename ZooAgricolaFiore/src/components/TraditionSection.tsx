@@ -2,6 +2,7 @@ import barrels from "@/assets/barrels.jpg";
 import salami from "@/assets/salami.jpg";
 import blackPigs from "@/assets/black-pigs.jpg";
 import videoZooagricola from "@/assets/video_zooagricola.mp4";
+import mobilePhoto from "@/assets/mobile-photo.png";
 
 const TraditionSection = () => {
   const circleImages = [
@@ -63,8 +64,8 @@ const TraditionSection = () => {
               Natura, tradizione e famiglia
             </h3>
 
-            {/* Video of pigs in nature */}
-            <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-black">
+            {/* Video of pigs in nature - Desktop */}
+            <div className="hidden md:block rounded-3xl overflow-hidden shadow-2xl border-4 border-black">
               <video
                 autoPlay
                 loop
@@ -77,6 +78,16 @@ const TraditionSection = () => {
                 <source src={videoZooagricola} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
+            </div>
+
+            {/* Mobile Photo - Mobile */}
+            <div className="md:hidden rounded-3xl overflow-hidden shadow-2xl border-4 border-black">
+              <img
+                src={mobilePhoto}
+                alt="ZooAgricola Fiore"
+                className="w-full h-auto object-cover"
+                style={{ maxHeight: '500px' }}
+              />
             </div>
           </div>
         </div>

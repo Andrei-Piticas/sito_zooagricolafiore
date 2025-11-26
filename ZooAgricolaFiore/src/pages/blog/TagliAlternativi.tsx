@@ -18,7 +18,7 @@ const TagliAlternativi = () => {
           <img src={blogCooking} alt="Tagli Alternativi" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/40" />
         </div>
-        <div className="container relative z-10 mx-auto px-6">
+        <div className="container relative z-10 mx-auto px-6 pt-20">
           <div className="max-w-4xl">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">
               Il mondo del maiale in cucina: tagli alternativi e piatti che sorprendono
