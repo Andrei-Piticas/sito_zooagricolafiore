@@ -74,7 +74,7 @@ const TraditionSection = () => {
                 className="w-full h-auto object-cover"
                 style={{ maxHeight: '500px' }}
               >
-                <source src="/video_zooagricola.mp4" type="video/mp4" />
+                <source src="/sito_zooagricolafiore/video_zooagricola.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>

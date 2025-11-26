@@ -108,7 +108,7 @@ const SelezioneGenetica = () => {
                 </span>
               </div>
 
-              <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-8">
+              <h2 className="text-xl md:text-3xl font-bold text-foreground mb-8">
                 Investire Nel Futuro: Come La Selezione Genetica Sta Cambiando La Suinicoltura
               </h2>
 
